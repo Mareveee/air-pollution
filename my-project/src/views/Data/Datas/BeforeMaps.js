@@ -38,8 +38,8 @@ class Datas extends Component{
 
   getdata = (props) =>{
     if(props === undefined){
-      let urlaqikmitl = 'http://161.246.6.159:1880/AQInewest?deviceName=kmitl'
-      let urlaqiLad = 'http://161.246.6.159:1880/AQInewest?deviceName=Ladkrabang'
+      let urlaqikmitl = 'http://161.246.6.158:1880/AQInewest?deviceName=kmitl'
+      let urlaqiLad = 'http://161.246.6.158:1880/AQInewest?deviceName=Ladkrabang'
       axios.get(urlaqikmitl)
       .then(response => {
         this.state.aqi[0] = response.data[0].AQINOW
@@ -57,8 +57,8 @@ class Datas extends Component{
             this.state.aqi[1] = props.AQINOW
         }
         else{
-            let urlaqikmitl = 'http://161.246.6.159:1880/AQInewest?deviceName=kmitl'
-            let urlaqiLad = 'http://161.246.6.159:1880/AQInewest?deviceName=Ladkrabang'
+            let urlaqikmitl = 'http://161.246.6.158:1880/AQInewest?deviceName=kmitl'
+            let urlaqiLad = 'http://161.246.6.158:1880/AQInewest?deviceName=Ladkrabang'
             axios.get(urlaqikmitl)
             .then(response => {
                 this.state.aqi[0] = response.data[0].AQINOW

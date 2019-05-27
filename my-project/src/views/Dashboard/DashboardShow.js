@@ -169,8 +169,8 @@ class DashboardShow extends Component{
   }
   getdata = (props,location) =>{
     if(props === undefined){
-      let urldata = 'http://161.246.6.159:1880/datanewest?deviceName='.concat(location)
-      let urlaqi = 'http://161.246.6.159:1880/AQInewest?deviceName='.concat(location)
+      let urldata = 'http://161.246.6.158:1880/datanewest?deviceName='.concat(location)
+      let urlaqi = 'http://161.246.6.158:1880/AQInewest?deviceName='.concat(location)
       let i
       axios.get(urldata)
       .then(response => {
@@ -361,8 +361,8 @@ class DashboardShow extends Component{
         this.state.timedata[6] = props.timedata7.slice(11,16)
     }
     else{
-      let urldata = 'http://161.246.6.159:1880/datanewest?deviceName='.concat(location)
-      let urlaqi = 'http://161.246.6.159:1880/AQInewest?deviceName='.concat(location)
+      let urldata = 'http://161.246.6.158:1880/datanewest?deviceName='.concat(location)
+      let urlaqi = 'http://161.246.6.158:1880/AQInewest?deviceName='.concat(location)
       let i
       axios.get(urldata)
       .then(response => {

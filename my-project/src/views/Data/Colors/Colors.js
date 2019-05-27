@@ -11,7 +11,7 @@ class Colors extends Component {
    
     
     return (
-      <Connector mqttProps="ws://161.246.6.159:8083">
+      <Connector mqttProps="ws://161.246.6.158:8083">
       <div className="animated fadeIn">
           <MessageContainner/>
         </div>

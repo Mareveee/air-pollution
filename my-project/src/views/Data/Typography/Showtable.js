@@ -89,7 +89,7 @@ class Showtable extends React.Component {
       var t 
       var datef = "date1="
       var datel = "&date2="
-      var get = "http://161.246.6.159:1880/historical?"
+      var get = "http://161.246.6.158:1880/historical?"
       datef = datef.concat(this.props.fromyear,"-",this.props.frommonth,"-",this.props.fromdate,"T",this.props.fromtime,":00")
       datel = datel.concat(this.props.toyear,"-",this.props.tomonth,"-",this.props.todate,"T",this.props.totime,":00&device=",this.props.deviceEUI)
       get = get.concat(datef,datel)
@@ -177,7 +177,7 @@ class Showtable extends React.Component {
       var tt 
       var dateff = "date1="
       var datell = "&date2="
-      var getaqi = "http://161.246.6.159:1880/AQIhistorical?"
+      var getaqi = "http://161.246.6.158:1880/AQIhistorical?"
       dateff = dateff.concat(this.props.fromyear,"-",this.props.frommonth,"-",this.props.fromdate,"T",this.props.fromtime,":00")
       datell = datell.concat(this.props.toyear,"-",this.props.tomonth,"-",this.props.todate,"T",this.props.totime,":00&device=",this.props.deviceName)
       getaqi = getaqi.concat(dateff,datell)

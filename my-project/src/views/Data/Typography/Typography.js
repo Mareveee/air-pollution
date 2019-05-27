@@ -137,7 +137,7 @@ getToTime = () => {
 }
 componentWillMount(){
   let i
-  axios.get('http://161.246.6.159:1880/device')
+  axios.get('http://161.246.6.158:1880/device')
   .then(response => {
     for(i=0;i<response.data.length;i++){
       this.setState({locationName:this.state.locationName.concat([response.data[i].deviceName])})
